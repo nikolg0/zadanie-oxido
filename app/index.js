@@ -7,9 +7,7 @@ const openai = new OpenAI({
 });
 
 const readArticle = () => {
-  return fs.readFileSync("article.txt", "utf-8");
+  return fs.readFileSync("app/article.txt", "utf-8");
 };
 
-console.log(readArticle);
-
-console.log("hello");
+console.log(readArticle());
