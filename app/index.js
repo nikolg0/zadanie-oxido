@@ -11,3 +11,5 @@ const readArticle = () => {
 };
 
 console.log(readArticle());
+
+console.log("oki doki");
