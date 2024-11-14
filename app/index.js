@@ -27,13 +27,13 @@ const response = await openai.chat.completions.create({
     {
       role: "system",
       content:
-        "You are a helpful assistant provided with content, and your task is to structure it into HTMLformat with using proper tags and adding image placeholders where appropriate.",
+        "You are a helpful assistant provided with content, and your task is to structure it into HTMLformat with using proper tags like <h1>, <h2>, <p> and add image placeholders with <img> tags withsrc set to 'image_placeholder.jpg.'. Make sure that each image have an alt attribute thatincludes a detailed prompt for generating the image, also use <figcaption> tag for caption added undereach image.",
     },
     {
     "role": "user",
-    "content": "Structure the given article with proper <h1>, <h2>, <p> tags and mark images with<img> tag and src="image_placeholder.jpg" attribute. Add the alt attribute",
-}
-  ]
+    "content": articleContent,
+},
+  ],
 })
-}
+},
 };
