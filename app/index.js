@@ -13,8 +13,6 @@ const readArticle = () => {
 const generateHtml = async () => {
   const articleContent = readArticle();
 
-  console.log("artykuł:", articleContent);
-
   if (!articleContent) {
     console.error("Can't find the article.");
     return;
