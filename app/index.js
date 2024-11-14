@@ -27,7 +27,7 @@ const generateHtml = async () => {
         {
           role: "system",
           content:
-            "You are a helpful assistant provided with content, and your task is to structure it into HTMLformat with using proper tags like <h1>, <h2>, <p> and add image placeholders with <img> tags withsrc set to 'image_placeholder.jpg.'. Make sure that each image have an alt attribute thatincludes a detailed prompt for generating the image, also use <figcaption> tag for caption added undereach image.",
+            "You are a helpful assistant provided with content, and your task is to structure it into HTML format with using proper tags like <h1>, <h2>, <p> and add image placeholders with <img> tags with src set to 'image_placeholder.jpg.' where appropriate. Make sure that each image have an alt attribute that includes a detailed prompt for generating the image, also use <figcaption> tag for caption added under each image. Generate the content that only fits between tags <body> </body>.",
         },
         {
           role: "user",
